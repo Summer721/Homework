@@ -55,7 +55,7 @@ for i in range(100):
     if fb(i) < 100:
         if fb(i) == 0:
             continue
-        print(fb(i), end=' ')
-        print()
+        print(fb(i), end=' ')      
     else:
+        print()
         break
