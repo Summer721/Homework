@@ -18,7 +18,8 @@ def make_act():
     #10位激活码
     ret_code = ''
     for _ in range(0,10):
-        code_dict = dict(zip(range(3), (random.choice(Upper), random.choice(Lower), random.choice(number_str))))
+        #code_dict = dict(zip(range(3), (random.choice(Upper), random.choice(Lower), random.choice(number_str))))
+        code_dict = dict(zip(range(3), map(random.choice,(Upper,Lower,number_str))))
         temp = code_dict[random.choice(list(code_dict.keys()))]
         ret_code += temp
     while True:
