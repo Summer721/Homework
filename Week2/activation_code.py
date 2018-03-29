@@ -29,3 +29,17 @@ i = 1
 while i <= 200:
     print(next(make_act()))
     i += 1
+#第二题
+#方法一：
+i = 1
+j = 1
+print(i, end=' ')
+print(j, end=' ')
+for x in range(100):
+    c = i + j
+    i = j
+    j = c
+    print(c, end=' ')
+print()
+
+#方法二：
