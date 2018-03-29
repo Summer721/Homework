@@ -39,7 +39,23 @@ for x in range(100):
     c = i + j
     i = j
     j = c
-    print(c, end=' ')
+    if c < 100:
+        print(c, end=' ')
 print()
 
 #方法二：
+def fb(n):
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fb(n-1) + fb(n-2)
+for i in range(100):
+    if fb(i) < 100:
+        if fb(i) == 0:
+            continue
+        print(fb(i), end=' ')
+        print()
+    else:
+        break
